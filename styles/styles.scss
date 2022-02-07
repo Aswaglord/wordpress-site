@@ -1,0 +1,200 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto Slab", serif;
+  background-color: lightgrey;
+}
+
+// index.html page
+.home-page-container {
+  .navbar-container {
+    @include navbar-top;
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    font-family: $roboto-font;
+    padding-top: 10px;
+
+    .navbar-brand {
+      font-weight: 100;
+      font-size: 24px;
+      color: white;
+    }
+    .navbar-links-container {
+      a {
+        color: grey;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 5px;
+      }
+
+      :nth-child(3) {
+        color: $pink-color;
+      }
+
+      :nth-child(4) {
+        background-color: $pink-color;
+        color: white;
+        border-radius: 100px;
+        padding: 20px 25px;
+      }
+    }
+  }
+  .hero-container {
+    background: url(https://wp-themes.com/wp-content/themes/hestia/assets/img/slider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      font-size: 64px;
+      font-weight: 900;
+      font-family: $roboto-font;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 125px;
+      height: 50px;
+      color: white;
+      background-color: $pink-color;
+      border-radius: 5px;
+      border: none;
+      font-size: 11px;
+    }
+  }
+
+  .info-container {
+    position: relative;
+    bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://wp-themes.com/wp-content/themes/hestia/assets/img/contact.jpg");
+    background-size: contain;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin: auto;
+
+    .top-header {
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+
+    .top-container {
+      background: white;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+
+      div {
+        p {
+          font-size: 10px;
+        }
+      }
+      .top-header {
+        grid-column: span 3;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .about-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    div {
+      width: 30%;
+    }
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .blog-container {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    width: 100%;
+    justify-content: center;
+
+    div {
+      width: 200px;
+      height: 200px;
+      padding: 50px;
+
+      p {
+        @include blog-header(purple);
+      }
+      .uncat-2 {
+        color: #00bcd4;
+      }
+      .uncat-3 {
+        color: #f44336;
+      }
+      span {
+        font-family: $roboto-font;
+        color: #999;
+        font-weight: 200;
+        font-size: 12px;
+
+        a {
+          text-decoration: none;
+          color: blue;
+        }
+      }
+    }
+  }
+}
+
+.contact-container {
+  padding-right: 25%;
+  color: white;
+}
+
+.footer-container {
+  position: relative;
+  bottom: -50px;
+
+  margin: auto;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    a {
+      padding: 10px;
+      @include link-tag;
+    }
+  }
+}

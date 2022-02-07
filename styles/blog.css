@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto Slab", serif;
+  background-color: lightgrey;
+}
+
+.blog-page-container .navbar-container {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+  font-family: "Roboto";
+  padding-top: 10px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.blog-page-container .navbar-container .navbar-brand {
+  font-weight: 100;
+  font-size: 24px;
+  color: white;
+}
+
+.blog-page-container .navbar-container .navbar-links-container a {
+  color: grey;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.blog-page-container .navbar-container .navbar-links-container :nth-child(3) {
+  color: #e91e63;
+}
+
+.blog-page-container .navbar-container .navbar-links-container :nth-child(4) {
+  background-color: #e91e63;
+  color: white;
+  border-radius: 100px;
+  padding: 20px 25px;
+}
+
+.blog-page-container .gradient-section {
+  background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-page-container .gradient-section h1 {
+  margin: auto;
+  font-size: 40px;
+  color: white;
+  font-family: "Roboto";
+}
+
+.blog-page-container .main-section-container {
+  position: relative;
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-page-container .main-section-container div {
+  width: 50%;
+}
+
+.blog-page-container .main-section-container div h6 {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: purple;
+}
+
+.blog-page-container .main-section-container div .lightblue {
+  color: turquoise;
+}
+
+.blog-page-container .main-section-container div .red {
+  color: red;
+}
+
+.blog-page-container .main-section-container div .orange {
+  color: orange;
+}
+
+.blog-page-container .main-section-container div .pink {
+  color: pink;
+}
+
+.blog-page-container .main-section-container div .green {
+  color: green;
+}
+
+.blog-page-container .main-section-container h1 {
+  font-size: 20px;
+}
+
+.blog-page-container .main-section-container span {
+  color: grey;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.blog-page-container .main-section-container p {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.blog-page-container .footer-container {
+  position: relative;
+  width: 100%;
+  bottom: -50px;
+  margin: auto;
+  height: 100px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-page-container .footer-container div {
+  padding-left: 150px;
+}
+
+.blog-page-container .footer-container div a {
+  padding: 10px;
+  font-size: 12px;
+  opacity: .86;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-family: "Roboto";
+  width: 90vw;
+}
+/*# sourceMappingURL=blog.css.map */
